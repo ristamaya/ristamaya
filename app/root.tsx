@@ -18,6 +18,8 @@ export function links() {
   return [{ rel: "stylesheet", href: styles }];
 }
 
+import Layout from "~/application/components/layout";
+
 export default function App() {
   return (
     <html lang="en">
@@ -28,7 +30,9 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
+        <Layout>
+          <Outlet />
+        </Layout>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
