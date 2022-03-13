@@ -2,10 +2,12 @@ import { Link, MetaFunction, Outlet } from "remix";
 import LinkItem from "~/application/components/linkitem";
 
 export const meta: MetaFunction = () => {
-  return { title: "Ristama|Components" };
+  return { title: "Ristamaya|Components" };
 };
 
 export default function Components() {
+  const classNameLink = "h-9 w-40 font-semibold";
+
   return (
     <div className="relative block text-theme-base z-0">
       {/* Sidebar */}
@@ -18,25 +20,19 @@ export default function Components() {
           id="SharedCompSB"
           className="relative h-[calc(100%-140px)] text-xs font-semibold overflow-auto overflow-x-hidden pl-2"
         >
-          <LinkItem
-            to="./layout"
-            title="Layout"
-            className="h-9 w-40 font-semibold"
-          />
-          <LinkItem
-            to="./formcontrol"
-            title="Form"
-            className="h-9 w-40 font-semibold"
-          />
+          <LinkItem to="./layout" title="Layout" className={classNameLink} />
+          <LinkItem to="./input" title="input" className={classNameLink} />
+          <LinkItem to="./button" title="Button" className={classNameLink} />
+          <LinkItem to="./table" title="Table" className={classNameLink} />
           <LinkItem
             to="./dynamicicon"
             title="Dynamic Icon"
-            className="h-9 w-40 font-semibold"
+            className={classNameLink}
           />
           <LinkItem
             to="./treeview"
             title="Treeview"
-            className="h-9 w-40 font-semibold"
+            className={classNameLink}
           />
         </div>
         <div className="relative text-theme-strong text-xs font-semibold mt-2 text-center">
