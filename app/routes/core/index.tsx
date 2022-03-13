@@ -2,12 +2,29 @@ export default function Index() {
   return (
     <div>
       <div className="relative sm:flex flex-warp w-full text-theme-base items-center align-middle justify-center px-10 py-7">
-        <img src="people_01.png" className="m-auto" />
-        <span className=" text-4xl font-semibold">
-          CORE Hello This Is
-          <span className="text-6xl font-semibold"> RISTAMA </span>
-          My First Project Web Application Built By React JS (Remix JS) Tailwind
-          CSS And More
+        <img
+          src="/images/img3.png"
+          className="scale-75 sm:scale-100 m-auto object-cover"
+        />
+        <span className="text-lg sm:text-lg mb-1">
+          Hello there I'm{" "}
+          <span className="sm:text-md text-base sm:text-xl font-semibold">
+            {" "}
+            Anjar{" "}
+          </span>
+          I call this
+          <span className="sm:text-md text-base sm:text-xl font-semibold">
+            {" "}
+            RISTAMAYA,{" "}
+          </span>
+          it just my personal website built by
+          <ul>
+            <li>- Remix JS with Typescript</li>
+            <li>- Tailwind CSS</li>
+            <li>- MongoDB</li>
+            <li>- And More</li>
+          </ul>
+          Thanks a lot for visiting please take a look what's going on here
         </span>
       </div>
     </div>

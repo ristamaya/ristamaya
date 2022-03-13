@@ -9,9 +9,9 @@ export default function Components() {
   return (
     <div className="relative block text-theme-base z-0">
       {/* Sidebar */}
-      <div className="fixed block w-40 h-[calc(100%-64px)] bg-theme-fill z-20 shadow-md">
+      <div className="fixed block w-28 h-[calc(100%-64px)] bg-theme-fill z-20 shadow-md">
         <div className="relative text-theme-strong text-xl font-semibold mt-3 mb-6 pl-2">
-          My Stuffs
+          <Link to="/shared/components">My Stuffs</Link>
         </div>
 
         <div

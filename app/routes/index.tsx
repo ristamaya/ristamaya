@@ -15,7 +15,7 @@ export default function Index() {
           I call this
           <span className="sm:text-md text-base sm:text-xl font-semibold">
             {" "}
-            RISTAMA,{" "}
+            RISTAMAYA,{" "}
           </span>
           it just my personal website built by
           <ul>
