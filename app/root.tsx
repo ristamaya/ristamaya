@@ -1,5 +1,6 @@
 import {
   Links,
+  LinksFunction,
   LiveReload,
   Meta,
   Outlet,
@@ -9,14 +10,16 @@ import {
 import type { MetaFunction } from "remix";
 
 export const meta: MetaFunction = () => {
-  return { title: "New Remix App" };
+  return { title: "Ristamaya|Home" };
 };
 
-import styles from "./styles/app.css";
+import styles from "./tailwind.css";
 
-export function links() {
-  return [{ rel: "stylesheet", href: styles }];
-}
+// export function links() {
+//   return [{ rel: "stylesheet", href: styles }];
+// }
+
+export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 import Layout from "~/application/components/layout";
 
