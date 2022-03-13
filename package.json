@@ -10,7 +10,7 @@
     "build:remix": "cross-env NODE_ENV=production remix build",
     "dev": "run-p dev:*",
     "dev:css": "npm run generate:css -- --watch",
-    "dev:remix": "cross-env NODE_ENV=development remix dev",
+    "dev:remix": "cross-env NODE_ENV=development netlify dev",
     "generate:css": "npx tailwindcss -i ./styles/tailwind.css -o ./app/tailwind.css",
     "postinstall": "remix setup node",
     "start": "cross-env NODE_ENV=production remix-serve build"
