@@ -1,5 +1,5 @@
 import { Link, MetaFunction, Outlet } from "remix";
-import LinkItem from "~/application/components/linkitem";
+import LinkItem from "~/application/uicomponents/linkitem";
 
 export const meta: MetaFunction = () => {
   return { title: "Ristamaya|Components" };

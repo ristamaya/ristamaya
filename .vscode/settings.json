@@ -1,0 +1,16 @@
+{
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.eslintrc.json": true,
+    "**/next-env.d.ts": true,
+    "**/.gitignore": true,
+    "**/.cache": true,
+    "**/postcss.config.js": true,
+    "**/README.md": true,
+    "**/public": true,
+    "**/package-lock.json": true,
+    "**/app/tailwind.css": true,
+    "**/netlify": true,
+    "**/netlify.toml": true
+  }
+}

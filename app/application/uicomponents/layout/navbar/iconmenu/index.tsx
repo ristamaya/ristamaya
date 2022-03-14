@@ -1,6 +1,6 @@
 import React, { FC, useState } from "react";
 import { Link } from "remix";
-import DynamicIcon from "~/application/components/dynamicicon";
+import DynamicIcon from "~/application/uicomponents/dynamicicon";
 
 export interface MenuItem {
   icon: string;

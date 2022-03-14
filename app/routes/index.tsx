@@ -21,7 +21,7 @@ export default function Index() {
           <ul>
             <li>- Remix JS with Typescript</li>
             <li>- Tailwind CSS</li>
-            <li>- MongoDB</li>
+            <li>- MongoDB with Prisma ORM</li>
             <li>- And More</li>
           </ul>
           Thanks a lot for visiting please take a look what's going on here

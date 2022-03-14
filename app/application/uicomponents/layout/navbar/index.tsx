@@ -40,7 +40,7 @@ const NavBar: FC<{
   const menuItems = !props.MenuItems
     ? [
         { href: "/", title: "Ristamaya" },
-        { href: "/shared/components", title: "My Stuffs" },
+        { href: "/shared/components", title: "Playground" },
         { href: "/shared/tutorial", title: "Tutorial" },
         { href: "/shared/myprojects", title: "My Projects" },
         { href: "/shared/about", title: "About" },

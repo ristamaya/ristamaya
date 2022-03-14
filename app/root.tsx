@@ -21,7 +21,7 @@ import styles from "./tailwind.css";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
-import Layout from "~/application/components/layout";
+import Layout from "~/application/uicomponents/layout";
 
 export default function App() {
   return (

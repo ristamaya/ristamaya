@@ -1,4 +1,4 @@
-import WorkOnIt from "~/application/components/workonit";
+import WorkOnIt from "~/application/uicomponents/workonit";
 
 function SharedIndex() {
   return (
