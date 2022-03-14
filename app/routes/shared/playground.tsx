@@ -2,10 +2,10 @@ import { Link, MetaFunction, Outlet } from "remix";
 import LinkItem from "~/application/uicomponents/linkitem";
 
 export const meta: MetaFunction = () => {
-  return { title: "Ristamaya|Components" };
+  return { title: "Ristamaya|Playground" };
 };
 
-export default function Components() {
+export default function Playground() {
   const classNameLink = "h-9 w-40 font-semibold";
 
   return (
@@ -13,7 +13,7 @@ export default function Components() {
       {/* Sidebar */}
       <div className="fixed block w-28 h-[calc(100%-64px)] bg-theme-fill z-20 shadow-md">
         <div className="relative text-theme-strong text-xl font-semibold mt-3 mb-6 pl-2">
-          <Link to="/shared/components">My Stuffs</Link>
+          <Link to="/shared/playground">My Stuffs</Link>
         </div>
 
         <div
