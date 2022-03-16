@@ -427,9 +427,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --color-fill: 34, 211, 238;
   --color-muted: 236, 254, 255;
   --color-border: 103, 232, 249;
+  --color-border-warning: 244, 63, 94;
   --color-text-base: 68, 64, 60;
   --color-text-strong: 28, 25, 23;
   --color-text-muted: 199, 210, 254;
+  --color-text-warning: 244, 63, 94;
   --color-text-inverted: 231, 229, 228;
   --color-button-accent: 255, 255, 255;
   --color-button-accent-hover: 238, 242, 255;
@@ -440,10 +442,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --color-fill: 245, 158, 11;
   --color-muted: 254, 243, 199;
   --color-border: 252, 211, 77;
+  --color-border-warning: 244, 63, 94;
   --color-text-base: 68, 64, 60;
   --color-text-strong: 28, 25, 23;
   --color-text-muted: 199, 210, 254;
   --color-text-inverted: 231, 229, 228;
+  --color-text-warning: 244, 63, 94;
   --color-button-accent: 255, 255, 255;
   --color-button-accent-hover: 238, 242, 255;
   --color-button-muted: 99, 102, 241;
@@ -453,10 +457,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --color-fill: 99, 102, 241;
   --color-muted: 224, 231, 255;
   --color-border: 129, 140, 248;
+  --color-border-warning: 244, 63, 94;
   --color-text-base: 68, 64, 60;
   --color-text-strong: 28, 25, 23;
   --color-text-muted: 199, 210, 254;
   --color-text-inverted: 231, 229, 228;
+  --color-text-warning: 244, 63, 94;
   --color-button-accent: 255, 255, 255;
   --color-button-accent-hover: 238, 242, 255;
   --color-button-muted: 99, 102, 241;
@@ -466,10 +472,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --color-fill: 51, 65, 85;
   --color-muted: 148, 163, 184;
   --color-border: 100, 116, 139;
+  --color-border-warning: 244, 63, 94;
   --color-text-base: 203, 213, 225;
   --color-text-strong: 248, 250, 252;
   --color-text-muted: 226, 232, 240;
   --color-text-inverted: 168, 162, 158;
+  --color-text-warning: 244, 63, 94;
   --color-button-accent: 255, 255, 255;
   --color-button-accent-hover: 238, 242, 255;
   --color-button-muted: 99, 102, 241;
@@ -479,10 +487,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --color-fill: 87, 83, 78;
   --color-muted: 168, 162, 158;
   --color-border: 100, 116, 139;
+  --color-border-warning: 244, 63, 94;
   --color-text-base: 203, 213, 225;
   --color-text-strong: 248, 250, 252;
   --color-text-muted: 226, 232, 240;
   --color-text-inverted: 148, 163, 184;
+  --color-text-warning: 244, 63, 94;
   --color-button-accent: 255, 255, 255;
   --color-button-accent-hover: 238, 242, 255;
   --color-button-muted: 99, 102, 241;
@@ -557,12 +567,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   left: 10rem;
 }
 
-.-top-\[6px\] {
-  top: -6px;
+.-top-\[5px\] {
+  top: -5px;
 }
 
 .left-2 {
   left: 0.5rem;
+}
+
+.right-1 {
+  right: 0.25rem;
 }
 
 .top-16 {
@@ -617,17 +631,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.m-2 {
+  margin: 0.5rem;
+}
+
 .m-3 {
   margin: 0.75rem;
 }
 
 .m-1 {
   margin: 0.25rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
 .my-1 {
@@ -674,6 +687,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.5rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .block {
   display: block;
 }
@@ -706,10 +723,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-8 {
   height: 2rem;
-}
-
-.h-10 {
-  height: 2.5rem;
 }
 
 .h-full {
@@ -748,16 +761,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
-.w-28 {
-  width: 7rem;
+.w-32 {
+  width: 8rem;
 }
 
 .w-\[calc\(100\%-192px\)\] {
   width: calc(100% - 192px);
 }
 
-.w-32 {
-  width: 8rem;
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .w-screen {
@@ -768,10 +783,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 0px;
 }
 
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.w-28 {
+  width: 7rem;
 }
 
 .w-7 {
@@ -796,6 +809,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-auto {
   width: auto;
+}
+
+.w-20 {
+  width: 5rem;
 }
 
 .-translate-x-full {
@@ -858,6 +875,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-\[4px\] {
+  border-radius: 4px;
 }
 
 .rounded-full {
@@ -939,6 +960,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -963,14 +992,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.25rem;
 }
 
+.px-\[2px\] {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .py-3 {
@@ -978,16 +1007,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.75rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
 
-.pt-3 {
-  padding-top: 0.75rem;
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
-.pb-2 {
-  padding-bottom: 0.5rem;
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
 .pr-9 {
@@ -1041,8 +1075,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
-.leading-tight {
-  line-height: 1.25;
+.leading-none {
+  line-height: 1;
 }
 
 .text-theme-base {
@@ -1060,9 +1094,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgba(var(--color-text-strong), var(--tw-text-opacity));
 }
 
-.text-theme-muted {
+.text-theme-warning {
   --tw-text-opacity: 1;
-  color: rgba(var(--color-text-muted), var(--tw-text-opacity));
+  color: rgba(var(--color-text-warning), var(--tw-text-opacity));
 }
 
 .text-opacity-40 {
@@ -1113,16 +1147,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 /* --->Scroll Bar<--- */
 
-#SharedCompSB::-webkit-scrollbar {
+#PlaygroundSB::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
-#SharedCompSB::-webkit-scrollbar-track {
+#PlaygroundSB::-webkit-scrollbar-track {
   background-color: rgba(229, 231, 235, var(--bg-opacity));
 }
 
-#SharedCompSB::-webkit-scrollbar-thumb {
+#PlaygroundSB::-webkit-scrollbar-thumb {
   border-radius: 6px;
   background-color: #747c81;
 }
@@ -1186,6 +1220,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgba(var(--color-text-muted), var(--tw-text-opacity));
 }
 
+.invalid\:border-theme-warning:invalid {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--color-border-warning), var(--tw-border-opacity));
+}
+
 .hover\:visible:hover {
   visibility: visible;
 }
@@ -1235,6 +1274,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .group:hover .group-hover\:w-\[calc\(100\%\+100px\)\] {
   width: calc(100% + 100px);
+}
+
+.peer:invalid ~ .peer-invalid\:text-theme-warning {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-text-warning), var(--tw-text-opacity));
 }
 
 .peer:focus ~ .peer-focus\:visible {

@@ -26,11 +26,13 @@ module.exports = {
           strong: withOpacity("--color-text-strong"),
           muted: withOpacity("--color-text-muted"),
           inverted: withOpacity("--color-text-inverted"),
+          warning: withOpacity("--color-text-warning"),
         },
       },
       borderColor: {
         theme: {
           border: withOpacity("--color-border"),
+          warning: withOpacity("--color-border-warning"),
         },
       },
       gradientColorStops: {
