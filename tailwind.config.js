@@ -15,9 +15,9 @@ module.exports = {
         theme: {
           fill: withOpacity("--color-fill"),
           muted: withOpacity("--color-muted"),
-          "button-accent": withOpacity("--color-button-accent"),
-          "button-accent-hover": withOpacity("--color-button-accent-hover"),
-          "button-muted": withOpacity("--color-button-muted"),
+          "button-base": withOpacity("--color-button-base"),
+          "button-hover": withOpacity("--color-button-hover"),
+          "button-inverted": withOpacity("--color-button-inverted"),
         },
       },
       textColor: {

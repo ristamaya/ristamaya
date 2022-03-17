@@ -21,6 +21,7 @@ export const FloatControl = () => {
           className={`absolute z-40 flex-row bottom-[40px] right-0 bg-theme-muted w-fit h-fit max-h-[calc(100vh-74px)] overflow-auto border border-theme-border mx-2 rounded-md shadow-md
             invisible opacity-0 -translate-x-full hover:visible hover:opacity-100 hover:translate-x-0 peer-focus:visible peer-focus:opacity-100 peer-focus:translate-x-0 
             transition-all duration-500 px-1 text-center`}
+          aria-hidden={true}
         >
           <span className="text-theme-strong text-sm font-semibold">
             Theme Color

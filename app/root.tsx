@@ -15,10 +15,6 @@ export const meta: MetaFunction = () => {
 
 import styles from "./tailwind.css";
 
-// export function links() {
-//   return [{ rel: "stylesheet", href: styles }];
-// }
-
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
 import Layout from "~/application/uicomponents/layout";

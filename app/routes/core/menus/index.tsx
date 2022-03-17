@@ -8,6 +8,7 @@ import { useState } from "react";
 
 function Menus() {
   const [errorMessage, setErrorMessage] = useState("");
+  let menuType = String;
 
   return (
     <div className="relative items-center justify-center p-5">
@@ -19,32 +20,54 @@ function Menus() {
           Menu Editor
         </div>
         <Input
-          name="parent"
+          label="Title"
+          className="w-96"
+          errorMessage={errorMessage}
+          name="title"
+          type="text"
+          placeholder="asdasd"
+        />
+        <Input
+          label="Menu Type"
+          className="w-96"
+          errorMessage={errorMessage}
+          name="menutype"
+          type="text"
+          inputData={["Menu", "Link"]}
+        />
+        <Input
           label="Parent"
-          className="w-28"
+          className="w-96"
           errorMessage={errorMessage}
+          name="parent"
+          type="text"
+          disabled={true}
         />
         <Input
-          name="title"
-          label="Title"
-          className="w-28"
+          label="Path"
+          className="w-96"
           errorMessage={errorMessage}
+          name="path"
+          type="text"
         />
         <Input
-          name="title"
-          label="Title"
-          className="w-28"
+          label="Path Type"
+          className="w-96"
           errorMessage={errorMessage}
+          name="pathtype"
+          type="text"
+          inputData={["Internal", "External"]}
         />
         <Input
-          name="title"
-          label="Title"
-          className="w-28"
+          label="icon"
+          className="w-96"
           errorMessage={errorMessage}
+          name="icon"
+          type="text"
         />
 
         <div>
-          <Button className="w-18" label="Save" />
+          <Button className="w-20" label="Save" type="submit" />
         </div>
       </Form>
     </div>
